@@ -8,17 +8,8 @@
     "strict": false,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "*": [
-        "/tmp/tasklet-deps/ethereal-insights-2b29b5fa0c5b/node_modules/*"
-      ]
-    },
     "typeRoots": [
-      "/tmp/tasklet-deps/ethereal-insights-2b29b5fa0c5b/node_modules/@types"
-    ],
-    "types": [
-      "react",
-      "react-dom"
+      "./node_modules/@types"
     ]
   },
   "include": [
