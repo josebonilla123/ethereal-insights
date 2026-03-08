@@ -30,14 +30,14 @@ const SPIRIT_WORDS = [
 ];
 
 const LOADING_STEPS = [
-  "Initializing quantum entropy engine...",
+  "Initializing SPECTER dual-node protocol...",
   "Calibrating QRNG stream baseline...",
-  "Loading TensorFlow.js anomaly models...",
+  "Verifying HSM cryptographic chain...",
   "Synchronizing Bell inequality meters...",
   "Activating EVP analysis pipeline...",
   "ECHO AI agent coming online...",
   "Spirit Box frequency scanner ready...",
-  "All systems nominal. Welcome.",
+  "All systems nominal. Begin investigation.",
 ];
 
 // ── Quantum Utilities ──────────────────────────────────────────────────────
@@ -151,9 +151,9 @@ const LandingScreen = ({ onBegin }: { onBegin: () => void }) => {
       <div className={`landing-content ${visible ? "landing-visible" : ""}`}>
         <div className="landing-logo-orb" />
         <div className="landing-eyebrow">OR4CL3 AI SOLUTIONS PRESENTS</div>
-        <h1 className="landing-title">ETHEREAL<br />INSIGHTS</h1>
+        <h1 className="landing-title">SPECTER<br /><span style={{fontSize:"0.55em",letterSpacing:"0.25em",opacity:0.85}}>ETHEREAL INSIGHTS</span></h1>
         <div className="landing-subtitle">
-          The world's first quantum-benchmarked<br />paranormal investigation platform
+          Dual-node · cryptographically verifiable<br />paranormal anomaly science
         </div>
         <div className="landing-features">
           {["⚛ QRNG Benchmarking","◉ Bell Inequality Testing","◈ ECHO AI Agent","📻 Spirit Box","🌡 Multi-Sensor Fusion","◬ EVP Entropy Analysis"].map(f => (
@@ -163,7 +163,7 @@ const LandingScreen = ({ onBegin }: { onBegin: () => void }) => {
         <button className="cta-btn" onClick={onBegin}>BEGIN INVESTIGATION</button>
         <div className="landing-footer">
           <span>Powered by Or4cl3 AI Solutions</span>
-          <span>v2.0 Quantum Enhanced</span>
+          <span>SPECTER v1.0 · Dual-Node Edition</span>
         </div>
       </div>
     </div>
@@ -188,8 +188,8 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div className="loading-screen">
       <div className="loading-orb" />
-      <div className="loading-title">ETHEREAL INSIGHTS</div>
-      <div className="loading-subtitle">QUANTUM ANOMALY PLATFORM v2.0</div>
+      <div className="loading-title">SPECTER: ETHEREAL INSIGHTS</div>
+      <div className="loading-subtitle">DUAL-NODE INVESTIGATION PLATFORM</div>
       <div className="loading-bar-track">
         <div className="loading-bar-fill" style={{ width: `${progress}%` }} />
       </div>
